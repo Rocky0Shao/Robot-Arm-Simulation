@@ -1,0 +1,36 @@
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>base_rot</joint_name>
+        <p_gain>100.0</p_gain>
+        <i_gain>0.1</i_gain>
+        <d_gain>0.01</d_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>joint1</joint_name>
+        <p_gain>100.0</p_gain>
+        <i_gain>0.1</i_gain>
+        <d_gain>0.01</d_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>joint2</joint_name>
+        <p_gain>100.0</p_gain>
+        <i_gain>0.1</i_gain>
+        <d_gain>0.01</d_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>wrist3</joint_name>
+        <p_gain>100.0</p_gain>
+        <i_gain>0.1</i_gain>
+        <d_gain>0.01</d_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>joint4</joint_name>
+        <p_gain>100.0</p_gain>
+        <i_gain>0.1</i_gain>
+        <d_gain>0.01</d_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+        <joint_name>wrist5</joint_name>
+        <p_gain>100.0</p_gain>
+        <i_gain>0.1</i_gain>
+        <d_gain>0.01</d_gain>
+    </plugin>

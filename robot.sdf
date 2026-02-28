@@ -433,6 +433,44 @@
         <i_gain>0.1</i_gain>
         <d_gain>0.01</d_gain>
     </plugin>
+
+      <pose>0.5 0.0 0.5 0 0 0</pose> 
+      <link name="sphere_link">
+        <kinematic>true</kinematic> <gravity>false</gravity>    <visual name="visual">
+          <geometry>
+            <sphere><radius>0.05</radius></sphere>
+          </geometry>
+          <material>
+            <ambient>1 0 0 1</ambient> <diffuse>1 0 0 1</diffuse>
+          </material>
+        </visual>
+        
+        <collision name="collision">
+          <geometry>
+            <sphere><radius>0.05</radius></sphere>
+          </geometry>
+        </collision>
+      </link>
+
+      <plugin filename="gz-sim-pose-publisher-system"
+              name="gz::sim::systems::PosePublisher">
+        <publish_link_pose>false</publish_link_pose>
+        <publish_model_pose>true</publish_model_pose>
+        <update_frequency>20</update_frequency> </plugin>
+
+
+
+
+
+
+
+
+
+
+
   </model>
+
+
+
 
 </sdf>

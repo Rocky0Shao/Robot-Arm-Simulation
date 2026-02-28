@@ -4,10 +4,10 @@
     "documentMicroversion": "65ba067854e62a4025146a05",
     "elementId": "95ca4be7df35bd29a1041ea2",
     "fullConfiguration": "default",
-    "id": "MT2sqJGDh4MUdgXyr",
+    "id": "MguOEdbiZ75IKkcR6",
     "isStandardContent": false,
-    "name": "swivle <1>",
-    "partId": "JPD",
+    "name": "base_link <1>",
+    "partId": "JHD",
     "suppressed": false,
     "type": "Part"
 }
