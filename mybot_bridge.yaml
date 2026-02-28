@@ -1,0 +1,36 @@
+---
+- ros_topic_name: "/model/mybot/joint/base_rot/cmd_pos"
+  gz_topic_name: "/model/mybot/joint/base_rot/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/model/mybot/joint/joint1/cmd_pos"
+  gz_topic_name: "/model/mybot/joint/joint1/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/model/mybot/joint/joint2/cmd_pos"
+  gz_topic_name: "/model/mybot/joint/joint2/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/model/mybot/joint/wrist3/cmd_pos"
+  gz_topic_name: "/model/mybot/joint/wrist3/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/model/mybot/joint/joint4/cmd_pos"
+  gz_topic_name: "/model/mybot/joint/joint4/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ
+
+- ros_topic_name: "/model/mybot/joint/wrist5/cmd_pos"
+  gz_topic_name: "/model/mybot/joint/wrist5/0/cmd_pos"
+  ros_type_name: "std_msgs/msg/Float64"
+  gz_type_name: "gz.msgs.Double"
+  direction: ROS_TO_GZ

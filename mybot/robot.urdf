@@ -1,0 +1,221 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 4af8569930bfdc776139afc6 -->
+<robot name="mybot">
+  <!-- Link base -->
+  <link name="base">
+    <inertial>
+      <origin xyz="-0.0595984 0.133273 0.0193778" rpy="0 0 0"/>
+      <mass value="6.33654"/>
+      <inertia ixx="0.0496653" ixy="0" ixz="0" iyy="0.0496653" iyz="0" izz="0.0986492"/>
+    </inertial>
+    <!-- Part base -->
+    <visual>
+      <origin xyz="-0.0595984 0.133273 0.00667784" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/base.stl"/>
+      </geometry>
+      <material name="base_material">
+        <color rgba="0.615686 0.811765 0.929412 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0595984 0.133273 0.00667784" rpy="0 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/base.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link swivle -->
+  <link name="swivle">
+    <inertial>
+      <origin xyz="0 -0 -0.0232936" rpy="0 0 0"/>
+      <mass value="1.06472"/>
+      <inertia ixx="0.00152741" ixy="0" ixz="0" iyy="0.0017074" iyz="0" izz="0.00204008"/>
+    </inertial>
+    <!-- Part swivle -->
+    <visual>
+      <origin xyz="0 0 0.0508" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/swivle.stl"/>
+      </geometry>
+      <material name="swivle_material">
+        <color rgba="0.647059 0.647059 0.647059 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.0508" rpy="3.14159 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/swivle.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link arm1 -->
+  <link name="arm1">
+    <inertial>
+      <origin xyz="-0.0757655 -0.0589887 -0.0127" rpy="0 0 0"/>
+      <mass value="1.26286"/>
+      <inertia ixx="0.00280173" ixy="-0.00158076" ixz="-1e-11" iyy="0.00360134" iyz="-3.8e-11" izz="0.0038425"/>
+    </inertial>
+    <!-- Part arm1 -->
+    <visual>
+      <origin xyz="0 0.127 -0.0127" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm1.stl"/>
+      </geometry>
+      <material name="arm1_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.127 -0.0127" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link arm2 -->
+  <link name="arm2">
+    <inertial>
+      <origin xyz="-0.0543508 -0.0377625 -0.0127" rpy="0 0 0"/>
+      <mass value="0.575994"/>
+      <inertia ixx="0.000587462" ixy="-0.00061082" ixz="0" iyy="0.00104221" iyz="-0" izz="0.00156698"/>
+    </inertial>
+    <!-- Part arm2 -->
+    <visual>
+      <origin xyz="0.120251 0.220624 -0.0127" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm2.stl"/>
+      </geometry>
+      <material name="arm2_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.120251 0.220624 -0.0127" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link arm1_2 -->
+  <link name="arm1_2">
+    <inertial>
+      <origin xyz="-1.33e-09 -3.237e-09 -0.146821" rpy="0 0 0"/>
+      <mass value="1.26286"/>
+      <inertia ixx="0.00404872" ixy="0.000401922" ixz="1.97e-10" iyy="0.00462585" iyz="4.53e-10" izz="0.001571"/>
+    </inertial>
+    <!-- Part arm1_2 -->
+    <visual>
+      <origin xyz="-0.0457458 -0.0891584 0.0272198" rpy="2.23233 -0 2.66753"/>
+      <geometry>
+        <mesh filename="package://assets/arm1.stl"/>
+      </geometry>
+      <material name="arm1_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0457458 -0.0891584 0.0272198" rpy="2.23233 -0 2.66753"/>
+      <geometry>
+        <mesh filename="package://assets/arm1.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link arm2_2 -->
+  <link name="arm2_2">
+    <inertial>
+      <origin xyz="-0.0543508 -0.0377625 -0.0127" rpy="0 0 0"/>
+      <mass value="0.575994"/>
+      <inertia ixx="0.000587462" ixy="-0.00061082" ixz="-0" iyy="0.00104221" iyz="0" izz="0.00156698"/>
+    </inertial>
+    <!-- Part arm2_2 -->
+    <visual>
+      <origin xyz="0.120251 0.220624 -0.0127" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm2.stl"/>
+      </geometry>
+      <material name="arm2_2_material">
+        <color rgba="0.917647 0.917647 0.917647 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.120251 0.220624 -0.0127" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://assets/arm2.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link hand -->
+  <link name="hand">
+    <inertial>
+      <origin xyz="-0 -0 -0.0252044" rpy="0 0 0"/>
+      <mass value="0.11732"/>
+      <inertia ixx="4.12722e-05" ixy="0" ixz="0" iyy="7.3382e-05" iyz="-0" izz="4.51044e-05"/>
+    </inertial>
+    <!-- Part hand -->
+    <visual>
+      <origin xyz="0.00580608 0.15067 0.407774" rpy="2.17802 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/hand.stl"/>
+      </geometry>
+      <material name="hand_material">
+        <color rgba="0.768627 0.886275 0.952941 1"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00580608 0.15067 0.407774" rpy="2.17802 -0 0"/>
+      <geometry>
+        <mesh filename="package://assets/hand.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from arm2_2 to hand -->
+  <joint name="wrist5" type="revolute">
+    <origin xyz="-0.146016 -0.101451 -0.0127" rpy="-1.5708 -1.20722 -0.963574"/>
+    <parent link="arm2_2"/>
+    <child link="hand"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from arm1_2 to arm2_2 -->
+  <joint name="joint4" type="revolute">
+    <origin xyz="0.0112995 -0.00579758 -0.2032" rpy="1.5708 -1.48999 1.09674"/>
+    <parent link="arm1_2"/>
+    <child link="arm2_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from arm2 to arm1_2 -->
+  <joint name="wrist3" type="revolute">
+    <origin xyz="-0.125156 -0.0869577 -0.0127" rpy="-0.607222 1.5708 0"/>
+    <parent link="arm2"/>
+    <child link="arm1_2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from arm1 to arm2 -->
+  <joint name="joint2" type="revolute">
+    <origin xyz="-0.120251 -0.0936238 -0" rpy="-0 0 -1.26071"/>
+    <parent link="arm1"/>
+    <child link="arm2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from swivle to arm1 -->
+  <joint name="joint1" type="revolute">
+    <origin xyz="-0.0127 -0 -0.0762" rpy="1.5708 -0.800967 -1.5708"/>
+    <parent link="swivle"/>
+    <child link="arm1"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+  <!-- Joint from base to swivle -->
+  <joint name="base_rot" type="revolute">
+    <origin xyz="-0.0595984 0.133273 0.0574778" rpy="3.14159 -0 2.48016"/>
+    <parent link="base"/>
+    <child link="swivle"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+  </joint>
+</robot>

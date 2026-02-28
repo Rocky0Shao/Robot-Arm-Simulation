@@ -1,0 +1,398 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: 4af8569930bfdc776139afc6 -->
+<sdf version="1.7">
+  <model name="mybot">
+    <!-- Link base -->
+    <link name="base">
+      <inertial>
+        <pose>-0.0595984 0.133273 0.0193778 0 0 0</pose>
+        <mass>6.33654</mass>
+        <inertia>
+          <ixx>0.0496653</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0496653</iyy>
+          <iyz>0</iyz>
+          <izz>0.0986492</izz>
+        </inertia>
+      </inertial>
+      <pose>0 0 0 0 -0 0</pose>
+      <!-- Part base -->
+      <visual name="base_visual_mesh_1">
+        <pose relative_to="base">-0.0595984 0.133273 0.00667784 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/base.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.615686 0.811765 0.929412 1</ambient>
+          <diffuse>0.615686 0.811765 0.929412 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="base_collision_mesh_2">
+        <pose relative_to="base">-0.0595984 0.133273 0.00667784 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/base.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <joint name="base_fixed_world" type="fixed">
+      <parent>world</parent>
+      <child>base</child>
+    </joint>
+    <!-- Link swivle -->
+    <link name="swivle">
+      <inertial>
+        <pose>0 -0 -0.0232936 0 0 0</pose>
+        <mass>1.06472</mass>
+        <inertia>
+          <ixx>0.00152741</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.0017074</iyy>
+          <iyz>0</iyz>
+          <izz>0.00204008</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="base_rot">0 0 0 0 -0 0</pose>
+      <!-- Part swivle -->
+      <visual name="swivle_visual_mesh_1">
+        <pose relative_to="swivle">0 0 0.0508 3.14159 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/swivle.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.647059 0.647059 0.647059 1</ambient>
+          <diffuse>0.647059 0.647059 0.647059 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="swivle_collision_mesh_2">
+        <pose relative_to="swivle">0 0 0.0508 3.14159 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/swivle.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link arm1 -->
+    <link name="arm1">
+      <inertial>
+        <pose>-0.0757655 -0.0589887 -0.0127 0 0 0</pose>
+        <mass>1.26286</mass>
+        <inertia>
+          <ixx>0.00280173</ixx>
+          <ixy>-0.00158076</ixy>
+          <ixz>-1e-11</ixz>
+          <iyy>0.00360134</iyy>
+          <iyz>-3.8e-11</iyz>
+          <izz>0.0038425</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="joint1">0 0 0 0 -0 0</pose>
+      <!-- Part arm1 -->
+      <visual name="arm1_visual_mesh_1">
+        <pose relative_to="arm1">0 0.127 -0.0127 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/arm1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.231373 0.380392 0.705882 1</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="arm1_collision_mesh_2">
+        <pose relative_to="arm1">0 0.127 -0.0127 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/arm1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link arm2 -->
+    <link name="arm2">
+      <inertial>
+        <pose>-0.0543508 -0.0377625 -0.0127 0 0 0</pose>
+        <mass>0.575994</mass>
+        <inertia>
+          <ixx>0.000587462</ixx>
+          <ixy>-0.00061082</ixy>
+          <ixz>0</ixz>
+          <iyy>0.00104221</iyy>
+          <iyz>-0</iyz>
+          <izz>0.00156698</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="joint2">0 0 0 0 -0 0</pose>
+      <!-- Part arm2 -->
+      <visual name="arm2_visual_mesh_1">
+        <pose relative_to="arm2">0.120251 0.220624 -0.0127 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/arm2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.917647 0.917647 0.917647 1</ambient>
+          <diffuse>0.917647 0.917647 0.917647 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="arm2_collision_mesh_2">
+        <pose relative_to="arm2">0.120251 0.220624 -0.0127 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/arm2.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link arm1_2 -->
+    <link name="arm1_2">
+      <inertial>
+        <pose>-1.33e-09 -3.237e-09 -0.146821 0 0 0</pose>
+        <mass>1.26286</mass>
+        <inertia>
+          <ixx>0.00404872</ixx>
+          <ixy>0.000401922</ixy>
+          <ixz>1.97e-10</ixz>
+          <iyy>0.00462585</iyy>
+          <iyz>4.53e-10</iyz>
+          <izz>0.001571</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="wrist3">0 0 0 0 -0 0</pose>
+      <!-- Part arm1_2 -->
+      <visual name="arm1_2_visual_mesh_1">
+        <pose relative_to="arm1_2">-0.0457458 -0.0891584 0.0272198 2.23233 -0 2.66753</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/arm1.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.231373 0.380392 0.705882 1</ambient>
+          <diffuse>0.231373 0.380392 0.705882 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="arm1_2_collision_mesh_2">
+        <pose relative_to="arm1_2">-0.0457458 -0.0891584 0.0272198 2.23233 -0 2.66753</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/arm1.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link arm2_2 -->
+    <link name="arm2_2">
+      <inertial>
+        <pose>-0.0543508 -0.0377625 -0.0127 0 0 0</pose>
+        <mass>0.575994</mass>
+        <inertia>
+          <ixx>0.000587462</ixx>
+          <ixy>-0.00061082</ixy>
+          <ixz>-0</ixz>
+          <iyy>0.00104221</iyy>
+          <iyz>0</iyz>
+          <izz>0.00156698</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="joint4">0 0 0 0 -0 0</pose>
+      <!-- Part arm2_2 -->
+      <visual name="arm2_2_visual_mesh_1">
+        <pose relative_to="arm2_2">0.120251 0.220624 -0.0127 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/arm2.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.917647 0.917647 0.917647 1</ambient>
+          <diffuse>0.917647 0.917647 0.917647 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="arm2_2_collision_mesh_2">
+        <pose relative_to="arm2_2">0.120251 0.220624 -0.0127 1.5708 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/arm2.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Link hand -->
+    <link name="hand">
+      <inertial>
+        <pose>-0 -0 -0.0252044 0 0 0</pose>
+        <mass>0.11732</mass>
+        <inertia>
+          <ixx>4.12722e-05</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>7.3382e-05</iyy>
+          <iyz>-0</iyz>
+          <izz>4.51044e-05</izz>
+        </inertia>
+      </inertial>
+      <pose relative_to="wrist5">0 0 0 0 -0 0</pose>
+      <!-- Part hand -->
+      <visual name="hand_visual_mesh_1">
+        <pose relative_to="hand">0.00580608 0.15067 0.407774 2.17802 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/hand.stl</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.768627 0.886275 0.952941 1</ambient>
+          <diffuse>0.768627 0.886275 0.952941 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <collision name="hand_collision_mesh_2">
+        <pose relative_to="hand">0.00580608 0.15067 0.407774 2.17802 -0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://mybot/assets/hand.stl</uri>
+          </mesh>
+        </geometry>
+      </collision>
+    </link>
+    <!-- Joint from arm2_2 to hand -->
+    <joint name="wrist5" type="revolute">
+      <pose relative_to="arm2_2">-0.146016 -0.101451 -0.0127 -1.5708 -1.20722 -0.963574</pose>
+      <parent>arm2_2</parent>
+      <child>hand</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <!-- Joint from arm1_2 to arm2_2 -->
+    <joint name="joint4" type="revolute">
+      <pose relative_to="arm1_2">0.0112995 -0.00579758 -0.2032 1.5708 -1.48999 1.09674</pose>
+      <parent>arm1_2</parent>
+      <child>arm2_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <!-- Joint from arm2 to arm1_2 -->
+    <joint name="wrist3" type="revolute">
+      <pose relative_to="arm2">-0.125156 -0.0869577 -0.0127 -0.607222 1.5708 0</pose>
+      <parent>arm2</parent>
+      <child>arm1_2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <!-- Joint from arm1 to arm2 -->
+    <joint name="joint2" type="revolute">
+      <pose relative_to="arm1">-0.120251 -0.0936238 -0 -0 0 -1.26071</pose>
+      <parent>arm1</parent>
+      <child>arm2</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <!-- Joint from swivle to arm1 -->
+    <joint name="joint1" type="revolute">
+      <pose relative_to="swivle">-0.0127 -0 -0.0762 1.5708 -0.800967 -1.5708</pose>
+      <parent>swivle</parent>
+      <child>arm1</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+    <!-- Joint from base to swivle -->
+    <joint name="base_rot" type="revolute">
+      <pose relative_to="base">-0.0595984 0.133273 0.0574778 3.14159 -0 2.48016</pose>
+      <parent>base</parent>
+      <child>swivle</child>
+      <axis>
+        <xyz>0 0 1</xyz>
+        <limit>
+          <effort>10</effort>
+          <velocity>10</velocity>
+          <lower>-3.141592653589793</lower>
+          <upper>3.141592653589793</upper>
+        </limit>
+        <dynamics>
+          <friction>0.0</friction>
+          <damping>0.0</damping>
+        </dynamics>
+      </axis>
+    </joint>
+  </model>
+</sdf>

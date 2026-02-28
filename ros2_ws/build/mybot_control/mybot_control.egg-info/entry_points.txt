@@ -1,0 +1,2 @@
+[console_scripts]
+controller = mybot_control.controller_node:main
