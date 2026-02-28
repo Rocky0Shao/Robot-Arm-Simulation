@@ -10,18 +10,18 @@ The ultimate goal of this project is to implement **Inverse Kinematics (IK)** fo
 
 ### 1. Onshape CAD Design
 The robot arm was meticulously designed in Onshape to ensure mechanical feasibility and proper joint placement.
-> **[PLACEHOLDER: Video Demonstration of Onshape CAD Model]**
-> *Insert video link here*
+> **[Video Demonstration of Onshape CAD Model]**
+> <video controls src="https://private-user-images.githubusercontent.com/122405175/556413660-f705f9bb-d58a-4729-8d5a-9d64384a3087.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIyOTU0NzUsIm5iZiI6MTc3MjI5NTE3NSwicGF0aCI6Ii8xMjI0MDUxNzUvNTU2NDEzNjYwLWY3MDVmOWJiLWQ1OGEtNDcyOS04ZDVhLTlkNjQzODRhMzA4Ny5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIyOFQxNjEyNTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YWRjODA4MTg1OTM1NjcyZTQzY2E5MDQ4N2IzMjFjMTA2M2U0NGZhODljYTU1ZDdkNTMyYTFlOTQ4Yzc2YWViJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.bokrKMiH12hXE84-y_dvHo6fBtY9a-NubFsgjO8m5ew" width="100%"></video>
 
 ### 2. CAD to Simulation (Onshape-to-Robot)
 I use `onshape-to-robot` to automatically convert the CAD assembly into a simulation-ready URDF/SDF format, preserving physical properties like mass and inertia.
-> **[PLACEHOLDER: Video Demonstration of Onshape-to-Robot-Bullet Conversion]**
-> *Insert video link here*
+> **[Video Demonstration of Onshape-to-Robot-Bullet Conversion]**
+> <video controls src="https://private-user-images.githubusercontent.com/122405175/556410811-5ebabe96-dcf4-42d7-b76b-468ca49682c9.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIyOTQ1ODUsIm5iZiI6MTc3MjI5NDI4NSwicGF0aCI6Ii8xMjI0MDUxNzUvNTU2NDEwODExLTVlYmFiZTk2LWRjZjQtNDJkNy1iNzZiLTQ2OGNhNDk2ODJjOS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIyOFQxNTU4MDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1lYzU5ZGJlMTAyOTI1MDEyNTU4NGE4NDBhZWZkYTQ0NTgxY2M0YWQyYzE3YTQwYWYwNWExYmRhNjU5N2U5N2MyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.D6qbTheGsO4qA52GAH2DOSvdYzqZ7LzaNeipdnHmFuw" width="100%"></video>
 
 ### 3. Gazebo Simulation Init
 The robot spawned in Gazebo Sim, ready for ROS 2 interaction via the bridge.
-> **[PLACEHOLDER: Video Demonstration of Gazebo-Init-Sim]**
-> *Insert video link here*
+> **[Video Demonstration of Gazebo-Init-Sim]**
+> <video controls src="https://private-user-images.githubusercontent.com/122405175/556419621-c8822b1d-a196-418c-a97f-e048d70f14ea.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NzIyOTY1MTUsIm5iZiI6MTc3MjI5NjIxNSwicGF0aCI6Ii8xMjI0MDUxNzUvNTU2NDE5NjIxLWM4ODIyYjFkLWExOTYtNDE4Yy1hOTdmLWUwNDhkNzBmMTRlYS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwMjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDIyOFQxNjMwMTVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMTI0ZDY0Y2FlNjhhY2M0MjZiNTJkZWZkMGJlZDkxMmU2NzgzYjQzMTllMGU3ZGE2ZmViMzYwZDQ0ZjMyZjYxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.zIhUC0TMV0ajDRT2M_z6eqL9Z9eYHpPN07KiIbHGyHk" width="100%"></video>
 
 ---
 
