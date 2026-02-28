@@ -7,14 +7,14 @@
     <link name="base">
       <inertial>
         <pose>-0.0595984 0.133273 0.0193778 0 0 0</pose>
-        <mass>6.33654</mass>
+        <mass>0.375499</mass>
         <inertia>
-          <ixx>0.0496653</ixx>
+          <ixx>0.00294313</ixx>
           <ixy>0</ixy>
           <ixz>0</ixz>
-          <iyy>0.0496653</iyy>
+          <iyy>0.00294313</iyy>
           <iyz>0</iyz>
-          <izz>0.0986492</izz>
+          <izz>0.00584588</izz>
         </inertia>
       </inertial>
       <pose>0 0 0 0 -0 0</pose>
@@ -49,21 +49,21 @@
     <!-- Link swivle -->
     <link name="swivle">
       <inertial>
-        <pose>0 -0 -0.0232936 0 0 0</pose>
-        <mass>1.06472</mass>
+        <pose>-0 -0 -0.0232936 0 0 0</pose>
+        <mass>0.0630945</mass>
         <inertia>
-          <ixx>0.00152741</ixx>
-          <ixy>0</ixy>
+          <ixx>9.0513e-05</ixx>
+          <ixy>-0</ixy>
           <ixz>0</ixz>
-          <iyy>0.0017074</iyy>
+          <iyy>0.000101179</iyy>
           <iyz>0</iyz>
-          <izz>0.00204008</izz>
+          <izz>0.000120893</izz>
         </inertia>
       </inertial>
       <pose relative_to="base_rot">0 0 0 0 -0 0</pose>
       <!-- Part swivle -->
       <visual name="swivle_visual_mesh_1">
-        <pose relative_to="swivle">0 0 0.0508 3.14159 -0 0</pose>
+        <pose relative_to="swivle">-0 -0 0.0508 3.14159 -0 -0</pose>
         <geometry>
           <mesh>
             <uri>model://mybot/assets/swivle.stl</uri>
@@ -77,7 +77,7 @@
         </material>
       </visual>
       <collision name="swivle_collision_mesh_2">
-        <pose relative_to="swivle">0 0 0.0508 3.14159 -0 0</pose>
+        <pose relative_to="swivle">-0 -0 0.0508 3.14159 -0 -0</pose>
         <geometry>
           <mesh>
             <uri>model://mybot/assets/swivle.stl</uri>
@@ -89,14 +89,14 @@
     <link name="arm1">
       <inertial>
         <pose>-0.0757655 -0.0589887 -0.0127 0 0 0</pose>
-        <mass>1.26286</mass>
+        <mass>0.074836</mass>
         <inertia>
-          <ixx>0.00280173</ixx>
-          <ixy>-0.00158076</ixy>
-          <ixz>-1e-11</ixz>
-          <iyy>0.00360134</iyy>
-          <iyz>-3.8e-11</iyz>
-          <izz>0.0038425</izz>
+          <ixx>0.000166028</ixx>
+          <ixy>-9.36746e-05</ixy>
+          <ixz>-1e-12</ixz>
+          <iyy>0.000213413</iyy>
+          <iyz>-2e-12</iyz>
+          <izz>0.000227704</izz>
         </inertia>
       </inertial>
       <pose relative_to="joint1">0 0 0 0 -0 0</pose>
@@ -128,14 +128,14 @@
     <link name="arm2">
       <inertial>
         <pose>-0.0543508 -0.0377625 -0.0127 0 0 0</pose>
-        <mass>0.575994</mass>
+        <mass>0.0341329</mass>
         <inertia>
-          <ixx>0.000587462</ixx>
-          <ixy>-0.00061082</ixy>
-          <ixz>0</ixz>
-          <iyy>0.00104221</iyy>
-          <iyz>-0</iyz>
-          <izz>0.00156698</izz>
+          <ixx>3.48126e-05</ixx>
+          <ixy>-3.61968e-05</ixy>
+          <ixz>-0</ixz>
+          <iyy>6.17606e-05</iyy>
+          <iyz>0</iyz>
+          <izz>9.2858e-05</izz>
         </inertia>
       </inertial>
       <pose relative_to="joint2">0 0 0 0 -0 0</pose>
@@ -166,21 +166,21 @@
     <!-- Link arm1_2 -->
     <link name="arm1_2">
       <inertial>
-        <pose>-1.33e-09 -3.237e-09 -0.146821 0 0 0</pose>
-        <mass>1.26286</mass>
+        <pose>5.93e-10 3.449e-09 -0.146821 0 0 0</pose>
+        <mass>0.074836</mass>
         <inertia>
-          <ixx>0.00404872</ixx>
-          <ixy>0.000401922</ixy>
-          <ixz>1.97e-10</ixz>
-          <iyy>0.00462585</iyy>
-          <iyz>4.53e-10</iyz>
-          <izz>0.001571</izz>
+          <ixx>0.000231417</ixx>
+          <ixy>1.42814e-05</ixy>
+          <ixz>-6e-12</ixz>
+          <iyy>0.000282632</iyy>
+          <iyz>-2.9e-11</iyz>
+          <izz>9.30962e-05</izz>
         </inertia>
       </inertial>
       <pose relative_to="wrist3">0 0 0 0 -0 0</pose>
       <!-- Part arm1_2 -->
       <visual name="arm1_2_visual_mesh_1">
-        <pose relative_to="arm1_2">-0.0457458 -0.0891584 0.0272198 2.23233 -0 2.66753</pose>
+        <pose relative_to="arm1_2">0.0252163 0.0969847 0.0272198 2.23233 -0 -0.254371</pose>
         <geometry>
           <mesh>
             <uri>model://mybot/assets/arm1.stl</uri>
@@ -194,7 +194,7 @@
         </material>
       </visual>
       <collision name="arm1_2_collision_mesh_2">
-        <pose relative_to="arm1_2">-0.0457458 -0.0891584 0.0272198 2.23233 -0 2.66753</pose>
+        <pose relative_to="arm1_2">0.0252163 0.0969847 0.0272198 2.23233 -0 -0.254371</pose>
         <geometry>
           <mesh>
             <uri>model://mybot/assets/arm1.stl</uri>
@@ -206,14 +206,14 @@
     <link name="arm2_2">
       <inertial>
         <pose>-0.0543508 -0.0377625 -0.0127 0 0 0</pose>
-        <mass>0.575994</mass>
+        <mass>0.0341329</mass>
         <inertia>
-          <ixx>0.000587462</ixx>
-          <ixy>-0.00061082</ixy>
-          <ixz>-0</ixz>
-          <iyy>0.00104221</iyy>
+          <ixx>3.48126e-05</ixx>
+          <ixy>-3.61968e-05</ixy>
+          <ixz>0</ixz>
+          <iyy>6.17606e-05</iyy>
           <iyz>0</iyz>
-          <izz>0.00156698</izz>
+          <izz>9.2858e-05</izz>
         </inertia>
       </inertial>
       <pose relative_to="joint4">0 0 0 0 -0 0</pose>
@@ -245,20 +245,20 @@
     <link name="hand">
       <inertial>
         <pose>-0 -0 -0.0252044 0 0 0</pose>
-        <mass>0.11732</mass>
+        <mass>0.00695227</mass>
         <inertia>
-          <ixx>4.12722e-05</ixx>
-          <ixy>0</ixy>
+          <ixx>2.44576e-06</ixx>
+          <ixy>-0</ixy>
           <ixz>0</ixz>
-          <iyy>7.3382e-05</iyy>
+          <iyy>4.34857e-06</iyy>
           <iyz>-0</iyz>
-          <izz>4.51044e-05</izz>
+          <izz>2.67285e-06</izz>
         </inertia>
       </inertial>
       <pose relative_to="wrist5">0 0 0 0 -0 0</pose>
       <!-- Part hand -->
       <visual name="hand_visual_mesh_1">
-        <pose relative_to="hand">0.00580608 0.15067 0.407774 2.17802 -0 0</pose>
+        <pose relative_to="hand">0.00580608 0.15067 0.407774 2.17802 -0 -0</pose>
         <geometry>
           <mesh>
             <uri>model://mybot/assets/hand.stl</uri>
@@ -272,7 +272,7 @@
         </material>
       </visual>
       <collision name="hand_collision_mesh_2">
-        <pose relative_to="hand">0.00580608 0.15067 0.407774 2.17802 -0 0</pose>
+        <pose relative_to="hand">0.00580608 0.15067 0.407774 2.17802 -0 -0</pose>
         <geometry>
           <mesh>
             <uri>model://mybot/assets/hand.stl</uri>
@@ -282,7 +282,7 @@
     </link>
     <!-- Joint from arm2_2 to hand -->
     <joint name="wrist5" type="revolute">
-      <pose relative_to="arm2_2">-0.146016 -0.101451 -0.0127 -1.5708 -1.20722 -0.963574</pose>
+      <pose relative_to="arm2_2">-0.146016 -0.101451 -0.0127 1.5708 -0.103846 2.17802</pose>
       <parent>arm2_2</parent>
       <child>hand</child>
       <axis>
@@ -301,7 +301,7 @@
     </joint>
     <!-- Joint from arm1_2 to arm2_2 -->
     <joint name="joint4" type="revolute">
-      <pose relative_to="arm1_2">0.0112995 -0.00579758 -0.2032 1.5708 -1.48999 1.09674</pose>
+      <pose relative_to="arm1_2">-0.0122913 0.00319579 -0.2032 1.5708 1.08193 -1.82517</pose>
       <parent>arm1_2</parent>
       <child>arm2_2</child>
       <axis>
@@ -339,7 +339,7 @@
     </joint>
     <!-- Joint from arm1 to arm2 -->
     <joint name="joint2" type="revolute">
-      <pose relative_to="arm1">-0.120251 -0.0936238 -0 -0 0 -1.26071</pose>
+      <pose relative_to="arm1">-0.120251 -0.0936238 -0 0 0 1.71304</pose>
       <parent>arm1</parent>
       <child>arm2</child>
       <axis>
@@ -358,7 +358,7 @@
     </joint>
     <!-- Joint from swivle to arm1 -->
     <joint name="joint1" type="revolute">
-      <pose relative_to="swivle">-0.0127 -0 -0.0762 1.5708 -0.800967 -1.5708</pose>
+      <pose relative_to="swivle">-0.0127 0 -0.0762 1.5708 -0.550725 -1.5708</pose>
       <parent>swivle</parent>
       <child>arm1</child>
       <axis>
@@ -377,7 +377,7 @@
     </joint>
     <!-- Joint from base to swivle -->
     <joint name="base_rot" type="revolute">
-      <pose relative_to="base">-0.0595984 0.133273 0.0574778 3.14159 -0 2.48016</pose>
+      <pose relative_to="base">-0.0595984 0.133273 0.0574778 3.14159 -0 -2.95606</pose>
       <parent>base</parent>
       <child>swivle</child>
       <axis>
@@ -395,41 +395,38 @@
       </axis>
     </joint>
 
+
+
     <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
         <joint_name>base_rot</joint_name>
         <p_gain>100.0</p_gain>
         <i_gain>0.1</i_gain>
         <d_gain>0.01</d_gain>
     </plugin>
-
     <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
         <joint_name>joint1</joint_name>
         <p_gain>100.0</p_gain>
         <i_gain>0.1</i_gain>
         <d_gain>0.01</d_gain>
     </plugin>
-
     <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
         <joint_name>joint2</joint_name>
         <p_gain>100.0</p_gain>
         <i_gain>0.1</i_gain>
         <d_gain>0.01</d_gain>
     </plugin>
-
     <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
         <joint_name>wrist3</joint_name>
         <p_gain>100.0</p_gain>
         <i_gain>0.1</i_gain>
         <d_gain>0.01</d_gain>
     </plugin>
-
     <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
         <joint_name>joint4</joint_name>
         <p_gain>100.0</p_gain>
         <i_gain>0.1</i_gain>
         <d_gain>0.01</d_gain>
     </plugin>
-
     <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
         <joint_name>wrist5</joint_name>
         <p_gain>100.0</p_gain>
@@ -437,4 +434,5 @@
         <d_gain>0.01</d_gain>
     </plugin>
   </model>
+
 </sdf>
